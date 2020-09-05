@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/text_original_language"
+        style="@style/content_header.black"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/original_language"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_detailed_catalogue_original_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_original_language"
+        tools:text="set Original Language here"
+        tools:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_popularity"
+        style="@style/content_header.black"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/popularity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailed_catalogue_original_language" />
+
+    <TextView
+        android:id="@+id/tv_detailed_catalogue_popularity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_popularity"
+        tools:text="popularity number"
+        tools:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/text_vote_count"
+        style="@style/content_header.black"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/vote_count"
+        app:layout_constraintStart_toEndOf="@+id/text_popularity"
+        app:layout_constraintTop_toBottomOf="@+id/tv_detailed_catalogue_original_language" />
+
+    <TextView
+        android:id="@+id/tv_detailed_catalogue_vote_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/text_popularity"
+        app:layout_constraintTop_toBottomOf="@+id/text_vote_count"
+        tools:text="total vote count"
+        tools:textSize="16sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.detaileditem.CatalogueDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2B2B2B">
+
+        <ProgressBar
+            android:id="@+id/detailed_activity_progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_detailed_catalogue_backdrop"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/img_content_desc_backdrop"
+            android:scaleType="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@android:color/darker_gray" />
+
+        <ImageView
+            android:id="@+id/img_detailed_catalogue_poster"
+            android:layout_width="116dp"
+            android:layout_height="152dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="124dp"
+            android:contentDescription="@string/img_content_desc_poster"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img_detailed_catalogue_backdrop"
+            tools:src="#BEBEBE" />
+
+        <TextView
+            android:id="@+id/tv_detailed_catalogue_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/img_detailed_catalogue_poster"
+            app:layout_constraintTop_toBottomOf="@+id/img_detailed_catalogue_backdrop"
+            tools:text="This is catalogue title, this title is so long, and long long enough to make 3 lines. "
+            tools:textColor="@android:color/white"
+            tools:textSize="18sp"
+            tools:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_user_score_background"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="8dp"
+            android:padding="2dp"
+            android:src="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_detailed_catalogue_poster" />
+
+        <TextView
+            android:id="@+id/tv_detailed_catalogue_user_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/img_user_score_background"
+            app:layout_constraintEnd_toEndOf="@+id/img_user_score_background"
+            app:layout_constraintStart_toStartOf="@+id/img_user_score_background"
+            app:layout_constraintTop_toTopOf="@+id/img_user_score_background"
+            tools:text="99%"
+            tools:textColor="@android:color/white"
+            tools:textSize="18sp"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_only_user_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="22dp"
+            android:text="@string/user_score"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/img_user_score_background"
+            app:layout_constraintTop_toBottomOf="@+id/img_detailed_catalogue_poster" />
+
+        <View
+            android:id="@+id/simple_line_stroke"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:background="@android:color/white"
+            app:layout_constraintStart_toEndOf="@+id/text_only_user_score"
+            app:layout_constraintTop_toBottomOf="@+id/img_detailed_catalogue_poster" />
+
+        <TextView
+            android:id="@+id/text_released_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/released_date"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/simple_line_stroke"
+            app:layout_constraintTop_toBottomOf="@+id/img_detailed_catalogue_poster" />
+
+        <TextView
+            android:id="@+id/tv_detailed_catalogue_released_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/simple_line_stroke"
+            app:layout_constraintTop_toBottomOf="@+id/text_released_date"
+            tools:text="January 31, 2099"
+            tools:textColor="@android:color/white"
+            tools:textSize="12sp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_catalogue_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="360dp" />
+
+        <include
+            android:id="@+id/include_overview"
+            layout="@layout/layout_overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline_catalogue_header" />
+
+        <include
+            layout="@layout/layout_other_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include_overview" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

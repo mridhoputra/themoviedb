@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:padding="16dp"
+    app:cardCornerRadius="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/img_catalogue_backdrop"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/img_content_desc_backdrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@android:color/darker_gray" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_user_score_background"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:padding="2dp"
+            android:src="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_catalogue_backdrop" />
+
+        <TextView
+            android:id="@+id/tv_catalogue_user_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/img_user_score_background"
+            app:layout_constraintEnd_toEndOf="@+id/img_user_score_background"
+            app:layout_constraintStart_toStartOf="@+id/img_user_score_background"
+            app:layout_constraintTop_toTopOf="@+id/img_user_score_background"
+            tools:text="99%"
+            tools:textColor="@android:color/white"
+            tools:textSize="12sp"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_catalogue_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/img_user_score_background"
+            app:layout_constraintTop_toBottomOf="@+id/img_catalogue_backdrop"
+            tools:text="This is catalogue title."
+            tools:textColor="@color/colorTextPrimary"
+            tools:textSize="14sp"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_catalogue_released_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/colorTextSecondary"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/img_user_score_background"
+            app:layout_constraintTop_toBottomOf="@+id/tv_catalogue_title"
+            tools:text="This is catalogue released date."
+            tools:textColor="@color/colorTextSecondary"
+            tools:textSize="14sp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

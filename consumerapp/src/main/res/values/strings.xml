@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ConsumerApp</string>
+    <string name="app_title">TMDb ConsumerApp</string>
+
+    <!-- Content Titles -->
+    <string name="user_score">User Score</string>
+    <string name="released_date">Released Date:</string>
+    <string name="overview">Overview</string>
+    <string name="img_content_desc_backdrop">This is backdrop image of movie or tv show</string>
+    <string name="img_content_desc_poster">This is poster image of movie or tv show</string>
+    <string name="popularity">Popularity</string>
+    <string name="vote_count">Vote Count</string>
+    <string name="original_language">Original Language</string>
+    <string name="tab_text_1">Movies</string>
+    <string name="tab_text_2">TV Shows</string>
+    <string name="no_overview_available">We don\'t have any sinopsis in this language yet. Please help us to add it.</string>
+    <string name="no_data">No data this time</string>
+
+    <!-- Change Language Activity -->
+    <string name="language_settings_title">Change Language</string>
+
+</resources>

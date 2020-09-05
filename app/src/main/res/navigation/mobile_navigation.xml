@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home_movies">
+
+    <fragment
+        android:id="@+id/navigation_home_movies"
+        android:name="com.fairlight.submission_5.themoviedb.ui.home_movies.MovieFragment"
+        tools:layout="@layout/fragment_home_movies" />
+
+    <fragment
+        android:id="@+id/navigation_tv_shows"
+        android:name="com.fairlight.submission_5.themoviedb.ui.tv_shows.TvShowFragment"
+        tools:layout="@layout/fragment_tv_shows" />
+
+    <fragment
+        android:id="@+id/navigation_favorites"
+        android:name="com.fairlight.submission_5.themoviedb.ui.favorites.FavoriteFragment"
+        tools:layout="@layout/fragment_favorites" />
+</navigation>

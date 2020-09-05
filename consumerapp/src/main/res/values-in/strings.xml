@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ConsumerApp</string>
+    <string name="app_title">TMDb ConsumerApp</string>
+
+    <!-- Content Titles -->
+    <string name="user_score">Skor Pengguna</string>
+    <string name="released_date">Tanggal Rilis:</string>
+    <string name="overview">Sinopsis</string>
+    <string name="img_content_desc_backdrop">Ini adalah gambar backdrop dari film atau serial tv</string>
+    <string name="img_content_desc_poster">Ini adalah gambar poster dari film atau serial tv</string>
+    <string name="popularity">Popularitas</string>
+    <string name="vote_count">Jumlah Vote</string>
+    <string name="original_language">Bahasa Ucapan</string>
+    <string name="tab_text_1">Film</string>
+    <string name="tab_text_2">Serial TV</string>
+    <string name="no_overview_available">Kami belum memiliki sinopsis dalam bahasa Indonesia. Bantu kami untuk menambahkannya.</string>
+    <string name="no_data">Tidak ada data saat ini</string>
+
+    <!-- Change Language Activity -->
+    <string name="language_settings_title">Ganti Bahasa</string>
+</resources>

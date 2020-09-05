@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">The Movie Database (TMDb)</string>
+    <string name="app_title">The Movie Database (TMDb)</string>
+    <string name="app_title_released_today">Rilis Hari Ini</string>
+
+    <!-- Navigation Bar -->
+    <string name="title_movies">Film</string>
+    <string name="title_tv_shows">Serial TV</string>
+    <string name="title_favorites">Favorit</string>
+
+    <!-- App Bar -->
+    <string name="settings">Pengaturan</string>
+    <string name="search_movie_or_tv_show">Cari Film atau Serial TV</string>
+
+    <!-- Content Titles -->
+    <string name="user_score">Skor Pengguna</string>
+    <string name="released_date">Tanggal Rilis:</string>
+    <string name="overview">Sinopsis</string>
+    <string name="img_content_desc_backdrop">Ini adalah gambar backdrop dari film atau serial tv</string>
+    <string name="img_content_desc_poster">Ini adalah gambar poster dari film atau serial tv</string>
+    <string name="popularity">Popularitas</string>
+    <string name="vote_count">Jumlah Vote</string>
+    <string name="original_language">Bahasa Ucapan</string>
+    <string name="tab_text_1">Film</string>
+    <string name="tab_text_2">Serial TV</string>
+    <string name="no_overview_available">Kami belum memiliki sinopsis dalam bahasa Indonesia. Bantu kami untuk menambahkannya.</string>
+    <string name="no_movie_results">Tidak ada Film yang ditemukan.</string>
+    <string name="no_tv_show_results">Tidak ada Serial TV yang ditemukan.</string>
+
+    <!-- Toaster -->
+    <string name="set_favorite">Tambahkan ke daftar Favorit</string>
+    <string name="unset_favorite">Hapus dari daftar Favorit</string>
+    <string name="no_data">Tidak ada data saat ini</string>
+    <string name="daily_reminder_set">Pengingat Harian telah dijadwalkan\nNotifikasi akan muncul jam 07.00 pagi</string>
+    <string name="daily_reminder_unset">Pengingat Harian dimatikan</string>
+    <string name="release_today_reminder_set">Pengingat Rilis Film telah dijadwalkan\nNotifikasi akan muncul jam 08.00 pagi</string>
+    <string name="release_today_reminder_unset">Pengingat Rilis Film dimatikan</string>
+
+    <!-- SearchView Query Hint -->
+    <string name="search_movie">Cari Film…</string>
+    <string name="search_tv_show">Cari Serial TV…</string>
+
+    <!-- Settings Activity -->
+    <string name="title_activity_settings">Pengaturan</string>
+
+    <!-- Preference Titles -->
+    <string name="reminder_header">Pengingat</string>
+    <string name="language_header">Bahasa</string>
+
+    <!-- Reminder Preferences -->
+    <string name="daily_reminder_title">Pengingat Harian</string>
+    <string name="release_reminder_title">Pengingat Rilis</string>
+    <string name="daily_reminder_summary">Ingatkan saya untuk membuka aplikasi ini lagi</string>
+    <string name="release_reminder_summary">Ingatkan saya jika ada film yang rilis hari ini</string>
+
+    <!-- Langauge Preferences -->
+    <string name="language_settings_title">Ganti Bahasa</string>
+
+    <!-- Notification Message -->
+    <string name="daily_reminder_message">Selamat pagi :) Yuk awali pagi yang cerah ini dengan membuka aplikasi TheMovieDatabase (TMDb) :D</string>
+    <string name="release_today_reminder_no_new_movies_notif">Sepertinya nggak ada film yang rilis hari ini nih :(</string>
+    <string name="release_today_reminder_message">udah rilis lho, yok dicek!</string>
+    <string name="release_today_content_text_notif">film udah rilis lho, yok dicek!</string>
+    <string name="release_today_content_text_multiple_notif">udah rilis!</string>
+    <string name="release_today_inbox_style_big_title_notif">Film Baru</string>
+
+    <!-- Widget -->
+    <string name="appwidget_text">List Film Favorite</string>
+</resources>
